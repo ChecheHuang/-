@@ -6,13 +6,13 @@ class GameControl {
   snake: Snake;
   food: Food;
   scorePanel: ScorePanel;
-  direction: string = "Right";
+  direction: string = "";
   isLive = true;
 
   constructor() {
     this.snake = new Snake();
     this.food = new Food();
-    this.scorePanel = new ScorePanel();
+    this.scorePanel = new ScorePanel(10,2);
     this.init();
   }
 
